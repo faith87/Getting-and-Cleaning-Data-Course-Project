@@ -55,7 +55,7 @@ logicalVector <-  (grepl("activity..",colNames) | grepl("subject..",colNames) | 
 # Subset totaldata table based on the logicalVector to keep only desired columns
 totaldata <- totaldata[logicalVector==TRUE];
 
-# 3. Use descriptive activity names to name the activities in the data set
+# Use descriptive activity names to name the activities in the data set
 
 ActivityData [,1] <- ActivityType[ActivityData [,1], 2]
 colnames(ActivityData) <- "Activity"
@@ -82,10 +82,10 @@ for (i in 1:length(colNames))
   colNames[i] = gsub("GyroMag","GyroscopeMagnitude",colNames[i])
 };
 
-# Reassigning the new descriptive column names to the totaldata set
+# Reassign the new descriptive column names to the totaldata set
 colnames(totaldata) = colNames;
 
-# 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
+# Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 # Group by subject and activity and summarise using mean
 tidydata <- totaldata %>% 
