@@ -1,6 +1,6 @@
 # Getting-and-Cleaning-Data-Course-Project
 
-This i my submission for the course project for the Getting and Cleaning Data course. 
+This is my submission for the course project for the Getting and Cleaning Data course. 
 The file has already been downloaded and unzipped into this folder in my computer: 
 "C:/Users/ptobach/Documents/courseraproject/UCI HAR Dataset/"
 
